@@ -25,7 +25,7 @@ const staticpath = path.join(__dirname,"");
 app.use(express.static(staticpath));
 
 app.get("/",(req,res)=>{
-    res.render("index");
+    res.render("signup");
 })
 app.get("/signup",(req,res)=>{
     res.render("signup");
