@@ -8,7 +8,7 @@ const multer = require("multer");
 //const http = require('http').Server(app);
 //const mongoose = require('mongoose');
 const mongodb = require('mongodb');
-
+const port = process.env.PORT || 8000;
 mongoose.connect("mongodb+srv://gtalukdar627:sC7qzW6uzc2GEgJZ@cluster0.tkq7xul.mongodb.net/?retryWrites=true&w=majority");
 
 const Profile = require("./models/mongo");
