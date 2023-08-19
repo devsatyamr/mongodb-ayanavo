@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/signup" method="post" enctype="multipart/form-data" autocomplete="off" class="form">
+        <div id="form-container">
+        <div id="form1">
+            <h1>Account</h1><br>
+            <input type="email" name="mail" placeholder="Enter Your Mail:" class="input1" required autocomplete="off" id="p_mail"><br>
+            <input type="password" name="password" placeholder="Enter password:" class="input1" required autocomplete="off" id="p_mail_password"><br>
+            <a href="www.google.com">Forgot Password ?</a><br><br>
+            <button onclick="form1()">Proceed</button>
+        </div>
+        <div id="form2">
+            <h1>Profile Details</h1><br>
+            <input type="text" name="name" placeholder="Enter UserName:" class="input2" required autocomplete="off" id="p_name"><br>
+            <input type="password" name="profile_password" placeholder="Set Profile Password:" class="input2" required autocomplete="off" id="p_password"><br>
+            <input type="password" name="profile_confirm_password" placeholder="Confirm Password:" class="input2" required autocomplete="off"
+            id="confirm_p_password"><br>
+            <button onclick="form2()">Proceed</button>
+        </div>
+        <div id="form3">
+            <h1>Personal Details</h1><br>
+            <input type="text" name="local_address" placeholder="Enter Address:" class="input3" required autocomplete="off" id="p_address"><br>
+            <input type="text" name="phone_no" placeholder="Enter phone number:" class="input3" required autocomplete="off" id="p_contact"><br><br>
+            <button onclick="form3()">Proceed</button>
+        </div>
+        <div id="form4">
+            <h1>Upload Image</h1><br><br>
+            <input type="file" name="image" class="input4" id="file-input" required autocomplete="off"><br><br><br>
+            <input type="submit" value="SignUP" id="button">
+        </div>
+
+
+        <div class="err_container1" id="err1_form1">
+            <h1>Error</h1><br>
+            <center>
+            It seems you are not filled all the datas required. Please fill all the data.<br>Press 'OK' to continue.
+            </center><br>
+            <button onclick="err1_form1()">OK</button>
+        </div>
+        <div class="err_container1" id="err1_form2">
+            <h1>Error</h1><br>
+            <center>
+            It seems you are not filled all the datas required. Please fill all the data.<br>Press 'OK' to continue.
+            </center><br>
+            <button onclick="err1_form2()">OK</button>
+        </div>
+        <div class="err_container1" id="err1_form3">
+            <h1>Error</h1><br>
+            <center>
+            It seems you are not filled all the datas required. Please fill all the data.<br>Press 'OK' to continue.
+            </center><br>
+            <button onclick="err1_form3()">OK</button>
+        </div>
+
+
+        <div id="err_container2">
+            <h1>Error</h1><br>
+            <center>
+            It seems you are not entered same password and confirm password.<br>Press 'OK' to continue.
+            </center><br>
+            <button onclick="err2()">OK</button>
+        </div>
+        </div><br>
+        <div id="point_container">
+            <div id="point1" class="point"></div>
+            <div id="point2" class="point"></div>
+            <div id="point3" class="point"></div>
+            <div id="point4" class="point"></div>
+        </div><br>
+        Already have an Account? <a href="/">LogIn</a>
+    </form>
+    <script src="/src/index.js"></script>
+</body>
+</html>
